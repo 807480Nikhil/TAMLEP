@@ -1,0 +1,807 @@
+Script started on 2024-11-15 11:02:02+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="168" LINES="44"]
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ exitls --help[5Pexitls --help[5Pexit[Ksudo apt-get install git
+[?2004l[sudo] password for nikhil: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+git is already the newest version (1:2.43.0-1ubuntu7.1).
+0 upgraded, 0 newly installed, 0 to remove and 34 not upgraded.
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ git --version
+[?2004lgit version 2.43.0
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ git help
+[?2004lusage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ git help config
+[?2004l[?1049h[22;0;0t[?1h=[4mGIT-CONFIG[24m(1)                                                                Git Manual                                                               [4mGIT-CONFIG[24m(1)[m
+[m
+[1mNAME[0m[m
+       git-config - Get and set repository or global options[m
+[m
+[1mSYNOPSIS[0m[m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [--fixed-value] [--show-origin] [--show-scope] [-z|--null] <name> [<value> [<value-pattern>]][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] --add <name> <value>[m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [--fixed-value] --replace-all <name> <value> [<value-pattern>][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [--show-origin] [--show-scope] [-z|--null] [--fixed-value] --get <name> [<value-pattern>][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [--show-origin] [--show-scope] [-z|--null] [--fixed-value] --get-all <name> [<value-pattern>][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [--show-origin] [--show-scope] [-z|--null] [--fixed-value] [--name-only] --get-regexp <name-regex> [<value-pattern>][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [-z|--null] --get-urlmatch <name> <URL>[m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--fixed-value] --unset <name> [<value-pattern>][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--fixed-value] --unset-all <name> [<value-pattern>][m
+       [4mgit[24m [4mconfig[24m [<file-option>] --rename-section <old-name> <new-name>[m
+       [4mgit[24m [4mconfig[24m [<file-option>] --remove-section <name>[m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--show-origin] [--show-scope] [-z|--null] [--name-only] -l | --list[m
+       [4mgit[24m [4mconfig[24m [<file-option>] --get-color <name> [<default>][m
+       [4mgit[24m [4mconfig[24m [<file-option>] --get-colorbool <name> [<stdout-is-tty>][m
+       [4mgit[24m [4mconfig[24m [<file-option>] -e | --edit[m
+[m
+[1mDESCRIPTION[0m[m
+       You can query/set/replace/unset options with this command. The name is actually the section and the key separated by a dot, and the value will be escaped.[m
+[m
+       Multiple lines can be added to an option by using the [1m--add [22moption. If you want to update or unset an option which can occur on multiple lines, a[m
+       [1mvalue-pattern [22m(which is an extended regular expression, unless the [1m--fixed-value [22moption is given) needs to be given. Only the existing values that match the[m
+       pattern are updated or unset. If you want to handle the lines that do [1mnot [22mmatch the pattern, just prepend a single exclamation mark in front (see also the[m
+       section called “EXAMPLES”), but note that this only works when the [1m--fixed-value [22moption is not in use.[m
+[m
+       The [1m--type=<type> [22moption instructs [4mgit[24m [4mconfig[24m to ensure that incoming and outgoing values are canonicalize-able under the given <type>. If no [1m--type=<type>[0m[m
+       is given, no canonicalization will be performed. Callers may unset an existing [1m--type [22mspecifier with [1m--no-type[22m.[m
+[m
+       When reading, the values are read from the system, global and repository local configuration files by default, and options [1m--system[22m, [1m--global[22m, [1m--local[22m,[m
+       [1m--worktree [22mand [1m--file <filename> [22mcan be used to tell the command to read from only that location (see the section called “FILES”).[m
+[m
+       When writing, the new value is written to the repository local configuration file by default, and options [1m--system[22m, [1m--global[22m, [1m--worktree[22m, [1m--file <filename>[0m[m
+       can be used to tell the command to write to that location (you can say [1m--local [22mbut that is the default).[m
+[m
+       This command will fail with non-zero status upon error. Some exit codes are:[m
+[m
+       •   The section or key is invalid (ret=1),[m
+[m
+[7m Manual page git-config(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ git man
+[?2004lgit: 'man' is not a git command. See 'git --help'.
+
+The most similar command is
+	am
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ man git
+[?2004l[?1049h[22;0;0t[?1h=[4mGIT[24m(1)                                                                       Git Manual                                                                      [4mGIT[24m(1)[m
+[m
+[1mNAME[0m[m
+       git - the stupid content tracker[m
+[m
+[1mSYNOPSIS[0m[m
+       [4mgit[24m [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>][m
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path][m
+           [-p|--paginate|-P|--no-pager] [--no-replace-objects] [--bare][m
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>][m
+           [--config-env=<name>=<envvar>] <command> [<args>][m
+[m
+[1mDESCRIPTION[0m[m
+       Git is a fast, scalable, distributed revision control system with an unusually rich command set that provides both high-level operations and full access to[m
+       internals.[m
+[m
+       See [1mgittutorial[22m(7) to get started, then see [1mgiteveryday[22m(7) for a useful minimum set of commands. The [34m[1mGit User’s Manual[0m[1m[22m[1] has a more in-depth introduction.[m
+[m
+       After you mastered the basic concepts, you can come back to this page to learn what commands Git offers. You can learn more about individual Git commands[m
+       with "git help command". [1mgitcli[22m(7) manual page gives you an overview of the command-line command syntax.[m
+[m
+       A formatted and hyperlinked copy of the latest Git documentation can be viewed at [34m[1mhttps://git.github.io/htmldocs/git.html [0m[1m[22mor [34m[1mhttps://git-scm.com/docs[0m[1m[22m.[m
+[m
+[1mOPTIONS[0m[m
+       -v, --version[m
+           Prints the Git suite version that the [4mgit[24m program came from.[m
+[m
+           This option is internally converted to [1mgit version ...  [22mand accepts the same options as the [1mgit-version[22m(1) command. If [1m--help [22mis also given, it takes[m
+           precedence over [1m--version[22m.[m
+[m
+       -h, --help[m
+           Prints the synopsis and a list of the most commonly used commands. If the option [1m--all [22mor [1m-a [22mis given then all available commands are printed. If a Git[m
+           command is named this option will bring up the manual page for that command.[m
+[m
+           Other options are available to control how the manual page is displayed. See [1mgit-help[22m(1) for more information, because [1mgit --help ...  [22mis converted[m
+           internally into [1mgit help ...[22m.[m
+[m
+       -C <path>[m
+           Run as if git was started in [4m<path>[24m instead of the current working directory. When multiple [1m-C [22moptions are given, each subsequent non-absolute [1m-C <path>[0m[m
+           is interpreted relative to the preceding [1m-C <path>[22m. If [4m<path>[24m is present but empty, e.g.  [1m-C ""[22m, then the current working directory is left unchanged.[m
+[m
+           This option affects options that expect path name like [1m--git-dir [22mand [1m--work-tree [22min that their interpretations of the path names would be made relative[m
+           to the working directory caused by the [1m-C [22moption. For example the following invocations are equivalent:[m
+[7m Manual page git(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ git -v
+[?2004lgit version 2.43.0
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ git -h
+[?2004lusage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ git help -h
+[?2004lusage: git help [-a|--all] [--[no-]verbose] [--[no-]external-commands] [--[no-]aliases]
+   or: git help [[-i|--info] [-m|--man] [-w|--web]] [<command>|<doc>]
+   or: git help [-g|--guides]
+   or: git help [-c|--config]
+   or: git help [--user-interfaces]
+   or: git help [--developer-interfaces]
+
+    -a, --all             print all available commands
+    --[no-]external-commands
+                          show external commands in --all
+    --[no-]aliases        show aliases in --all
+    -m, --[no-]man        show man page
+    -w, --[no-]web        show manual in web browser
+    -i, --[no-]info       show info page
+    -v, --[no-]verbose    print command description
+    -g, --guides          print list of useful guides
+    --user-interfaces     print list of user-facing repository, command and file interfaces
+    --developer-interfaces
+                          print list of file formats, protocols and other developer interfaces
+    -c, --config          print all configuration variable names
+
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ git clone ^V^?[K[K^?[K[K[K[K[K[K[K[K[K[K[Kpwd
+[?2004l/home/nikhil
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ pwdgit help -h[K[K[K[K[K[K[Kclone https://github.com/807480Nikhil/TAMLEP.git
+[?2004lCloning into 'TAMLEP'...
+warning: You appear to have cloned an empty repository.
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ cd TAMLEP/
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git status
+[?2004lOn branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git status
+[?2004lOn branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mModule 1/[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git add .
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git status
+[?2004lOn branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	[32mnew file:   Module 1/unix_shell_session[m
+	[32mnew file:   Module 1/unix_shell_session:Zone.Identifier[m
+
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git d[Kstatus
+[?2004lOn branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	[32mnew file:   Module 1/unix_shell_session[m
+	[32mnew file:   Module 1/unix_shell_session:Zone.Identifier[m
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mdeleted:    Module 1/unix_shell_session:Zone.Identifier[m
+
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git commit -m "unix session added"
+[?2004l[main (root-commit) 9674e66] unix session added
+ 2 files changed, 9723 insertions(+)
+ create mode 100644 Module 1/unix_shell_session
+ create mode 100644 Module 1/unix_shell_session:Zone.Identifier
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git push
+[?2004lUsername for 'https://github.com': 807480Nikhil
+Password for 'https://807480Nikhil@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/807480Nikhil/TAMLEP.git/'
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git push -origin main[1@u[1@ 
+[?2004lUsername for 'https://github.com': 807480Nikhil
+Password for 'https://807480Nikhil@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/807480Nikhil/TAMLEP.git/'
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ ^[[A[K[K[Kgit config -l
+[?2004l[?1h=user.email=nikhil.varshney@tigeranalytics.com[m
+user.name=807480Nikhil[m
+core.repositoryformatversion=0[m
+core.filemode=true[m
+core.bare=false[m
+core.logallrefupdates=true[m
+remote.origin.url=https://github.com/807480Nikhil/TAMLEP.git[m
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*[m
+branch.main.remote=origin[m
+branch.main.merge=refs/heads/main[m
+[K[?1l>[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git basg[Kh
+[?2004lgit: 'bash' is not a git command. See 'git --help'.
+
+The most similar command is
+	stash
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ bash git
+[?2004l/usr/bin/git: /usr/bin/git: cannot execute binary file
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git config --global -[Kcredential-helper store
+[?2004lerror: key does not contain a section: credential-helper
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git config --global credential-helper store[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbash git[Kgit bashconfig -lpush -u origin main[Kcommit -m "unix session added"
+[?2004lOn branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mdeleted:    Module 1/unix_shell_session:Zone.Identifier[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git commit -m "unix session added"nfig --global credential-helper store[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbash git[Kgit bashconfig -lpush -u origin main[K
+[?2004lUsername for 'https://github.com': 807480Nikhil
+Password for 'https://807480Nikhil@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/807480Nikhil/TAMLEP.git/'
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ cd ..
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ cd ..
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: /home[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m/home[00m$ cd TA[K[Khoo\[K[K[K[Knikhil/
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ cd TA[K[K[K[K[Kcd T[K[K[K[K^V^?[K[K
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ git clone https://TAMLEP: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@github.com/807480Nikhil/TAMLEP
+[?2004lCloning into 'TAMLEP'...
+warning: You appear to have cloned an empty repository.
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ git add .[KreadMe[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd TAMLEP/
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ touch readme.md
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ ls
+[?2004l[0m[01;34m'Module 1'[0m   readme.md
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git add readme.md
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git status
+[?2004lOn branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	[32mnew file:   readme.md[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mModule 1/[m
+
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git commit - [K[K[K[K[Kit -m "readme added"
+[?2004l[main (root-commit) 8439d98] readme added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 readme.md
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git push
+[?2004lEnumerating objects: 3, done.
+Counting objects:  33% (1/3)Counting objects:  66% (2/3)Counting objects: 100% (3/3)Counting objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 224 bytes | 224.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/807480Nikhil/TAMLEP
+ * [new branch]      main -> main
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ exit
+[?2004lexit
+
+Script done on 2024-11-15 13:07:18+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2024-11-15 13:08:23+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="168" LINES="44"]
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ cd TAMLEP/
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git diff
+[?2004l[?1h=[K[?1l>[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   readme.md[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mModule 1/[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git diff
+[?2004l[?1h=[1mdiff --git a/readme.md b/readme.md[m[m
+[1mindex e69de29..fc6fda3 100644[m[m
+[1m--- a/readme.md[m[m
+[1m+++ b/readme.md[m[m
+[36m@@ -0,0 +1 @@[m[m
+[32m+[m[32mThis is modified.[m[m
+\ No newline at end of file[m[m
+[K[?1l>[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git statusd[K -s
+[?2004l [31mM[m readme.md
+[31m??[m "Module 1/"
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ vim readme.md
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;44r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[44;1H"readme.md" [noeol] 1L, 17B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1HThis is modified.
+[94m~                                                                                                                                                                       [3;1H~                                                                                                                                                                       [4;1H~                                                                                                                                                                       [5;1H~                                                                                                                                                                       [6;1H~                                                                                                                                                                       [7;1H~                                                                                                                                                                       [8;1H~                                                                                                                                                                       [9;1H~                                                                                                                                                                       [10;1H~                                                                                                                                                                       [11;1H~                                                                                                                                                                       [12;1H~                                                                                                                                                                       [13;1H~                                                                                                                                                                       [14;1H~                                                                                                                                                                       [15;1H~                                                                                                                                                                       [16;1H~                                                                                                                                                                       [17;1H~                                                                                                                                                                       [18;1H~                                                                                                                                                                       [19;1H~                                                                                                                                                                       [20;1H~                                                                                                                                                                       [21;1H~                                                                                                                                                                       [22;1H~                                                                                                                                                                       [23;1H~                                                                                                                                                                       [24;1H~                                                                                                                                                                       [25;1H~                                                                                                                                                                       [26;1H~                                                                                                                                                                       [27;1H~                                                                                                                                                                       [28;1H~                                                                                                                                                                       [29;1H~                                                                                                                                                                       [30;1H~                                                                                                                                                                       [31;1H~                                                                                                                                                                       [32;1H~                                                                                                                                                                       [33;1H~                                                                                                                                                                       [34;1H~                                                                                                                                                                       [35;1H~                                                                                                                                                                       [36;1H~                                                                                                                                                                       [37;1H~                                                                                                                                                                       [38;1H~                                                                                                                                                                       [39;1H~                                                                                                                                                                       [40;1H~                                                                                                                                                                       [41;1H~                                                                                                                                                                       [42;1H~                                                                                                                                                                       [43;1H~                                                                                                                                                                       [m[44;151H1,1[11CAll[1;1H[?25h[?4m[?25l[44;141H~@k[1;1H[44;141H   [1;2H[44;153H2[1;2H[?25h[?25l[44;141H~@k[1;2H[44;141H   [1;3H[44;153H3[1;3H[?25h[?25l[44;141H~@k[1;3H[44;141H   [1;4H[44;153H4[1;4H[?25h[?25l[44;141H~@k[1;4H[44;141H   [1;5H[44;153H5[1;5H[?25h[?25l[44;141H~@k[1;5H[44;141H   [1;6H[44;153H6[1;6H[?25h[?25l[44;141H~@k[1;6H[44;141H   [1;7H[44;153H7[1;7H[?25h[?25l[44;141H~@k[1;7H[44;141H   [1;8H[44;153H8[1;8H[?25h[?25l[44;141H~@k[1;8H[44;141H   [1;9H[44;153H9[1;9H[?25h[?25l[44;141H~@k[1;9H[44;141H   [1;10H[44;153H10[1;10H[?25h[?25l[44;141H~@k[1;10H[44;141H   [1;11H[44;154H1[1;11H[?25h[?25l[44;141H~@k[1;11H[44;141H   [1;12H[44;154H2[1;12H[?25h[?25l[44;141H~@k[1;12H[44;141H   [1;13H[44;154H3[1;13H[?25h[?25l[44;141H~@k[1;13H[44;141H   [1;14H[44;154H4[1;14H[?25h[?25l[44;141H~@k[1;14H[44;141H   [1;15H[44;154H5[1;15H[?25h[?25l[44;141H~@k[1;15H[44;141H   [1;16H[44;154H6[1;16H[?25h[?25l[44;141H~@k[1;16H[44;141H   [1;17H[44;154H7[1;17H[?25h[?25l[44;141H~@k[1;17H[44;141H   [1;17H[?25h[?25l[44;141H^M[1;17H[44;141H  [1;17H[?25h[?25l[44;141Hc[1;17H[?25h[?25l[44;142Hc[1;17H[44;141H  [1;1H[44;1H[1m-- INSERT --[m[44;13H[K[44;151H1,1[11CAll[1;1H[K[1;1H[?25h[?25lj[44;153H2[1;2H[?25h[?25lj[44;153H3[1;3H[?25h[?25l[2;1H[K[44;151H2,1[2;1H[?25h[?25lj[44;153H2[2;2H[?25h[?25lh[44;153H3[2;3H[?25h[?25lw[44;153H4[2;4H[?25h[?25lq[44;153H5[2;5H[?25h[?25l:[44;153H6[2;6H[?25h[?25l[3;1H[K[44;151H3,1[3;1H[?25h[?25l[94m~                                                                                                                                                                       [m[44;151H2,6[2;6H[?25h[?25l[2;5H[K[44;153H5[2;5H[?25h[?25l[2;4H[K[44;153H4[2;4H[?25h[?25l[2;3H[K[44;153H3[2;3H[?25h[?25lQ[44;153H4[2;4H[?25h[?25l[2;3H[K[44;153H3[2;3H[?25h[34m^[?25l[m[44;141H^V[2;3H[?25h[?25l[44;143H^?[2;3H [44;141H    [2;3H[34m^?[m[44;153H4-5[2;5H[?25h[?25l[2;3H[K[44;153H3  [2;3H[?25h[?25l[2;2H[K[44;153H2[2;2H[?25h[?25lh[44;153H3[2;3H[?25h[?25l[3;1H[K[44;151H3,1[3;1H[?25h[?25l[44;153H2[3;2H[?25h[?25l[44;153H3[3;3H[?25h[?25l[44;153H4[3;4H[?25h[?25l[44;153H5[3;5H[?25h[?25l[44;153H4[3;4H[?25h[?25l[44;153H3[3;3H[?25h[?25l[44;153H2[3;2H[?25h[?25l[44;153H1[3;1H[?25h[44;1H[K[3;1H[?25l[44;141H^[[3;1H[44;141H  [3;1H[44;151H3,0-1[9CAll[3;1H[?25h[?25l[44;141H^[[3;1H[44;141H  [3;1H[44;141H^[[3;1H[44;141H  [3;1H[?25h[?25l[44;141H^[[3;1H[44;141H  [3;1H[44;141H^[[3;1H[44;141H  [3;1H[?25h[?25l[44;141H^M[3;1H[44;141H  [3;1H[?25h[?25l[44;141H^M[3;1H[44;141H  [3;1H[?25h[?25l[44;141H^M[3;1H[44;141H  [3;1H[?25h[?25l[44;1HType  :qa!  and press <Enter> to abandon all changes and exit Vim[44;151H[K[44;151H3,0-1[9CAll[3;1H[?25h[?25l[44;141Hq[3;1H[?25h[?25l[44;142Ha[3;1H[44;1H[1mrecording @a[m[44;13H[K[44;151H3,0-1[9CAll[3;1H[?25h[?25l[44;141H![3;1H[?25h[?25l[44;142H^M[3;1H[44;141H   [3;1H[?25h[?25l[44;141Hq[3;1H[44;1H[K[3;1H[44;151H3,0-1[9CAll[3;1H[?25h[?25l[44;141Ha[3;1H[44;141H [3;1H[44;1H[1m-- INSERT --[m[44;151H[K[44;151H3,1[11CAll[3;1H[?25h[?25l![44;153H2[3;2H[?25h[?25lq[44;153H3[3;3H[?25h[?25la[44;153H4[3;4H[?25h[?25l1[44;153H5[3;5H[?25h[?25l[3;4H[K[44;153H4[3;4H[?25h[?25l![44;153H5[3;5H[?25h[?25l[4;1H[K[44;151H4,1[4;1H[?25h[?25l[94m~                                                                                                                                                                       [m[44;151H3,5[3;5H[?25h[?25l[3;4H[K[44;153H4[3;4H[?25h[?25l[3;3H[K[44;153H3[3;3H[?25h[?25l[3;2H[K[44;153H2[3;2H[?25h[?25l[3;1H[K[44;153H1[3;1H[?25h[?25lq[44;153H2[3;2H[?25h[?25la[44;153H3[3;3H[?25h[?25l![44;153H4[3;4H[?25h[?25l[4;1H[K[44;151H4,1[4;1H[?25h[?25l[94m~                                                                                                                                                                       [m[44;151H3,4[3;4H[?25h[?25l[3;3H[K[44;153H3[3;3H[?25h[?25l:[44;153H4[3;4H[?25h[?25l[4;1H[K[44;151H4,1[4;1H[?25h[?25l[44;1H[K[44;151H4,0-1[9CAll[4;1H[?25h[?25l[44;1HType  :qa!  and press <Enter> to abandon all changes and exit Vim[44;151H[K[44;151H4,0-1[9CAll[4;1H[?25h[?25l[44;141H:[4;1H[44;1H[K[44;1H:[?25hqa![?25l[?2004l[>4;m[23;2t[23;1t[44;1H[K[44;1H[?1004l[?2004l[?1l>[?1049l[23;0;0t[?25h[>4;m[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git diff --staged
+[?2004l[?1h=[K[?1l>[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git pull
+[?2004lAlready up to date.
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git add CONTRIBUTING.md[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kreadme.ms[Kd
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ echo >> readme.md
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ echo >> readme.md[1P readme.md[1P readme.md< readme.md< readme.md
+[?2004l[?2004h> dsg
+[?2004l[?2004h> done
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   readme.md[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   readme.md[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mModule 1/[m
+
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git add .
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   Module 1/unix_shell_session[m
+	[32mnew file:   Module 1/unix_shell_session:Zone.Identifier[m
+	[32mmodified:   readme.md[m
+
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ cd Module\ 1/
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP/Module 1[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP/Module 1[00m$ ls -F
+[?2004lunix_shell_session  unix_shell_session:Zone.Identifier
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP/Module 1[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP/Module 1[00m$ rm unix_shell_session:Zone.Identifier
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP/Module 1[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP/Module 1[00m$ ls
+[?2004lunix_shell_session
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP/Module 1[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP/Module 1[00m$ cd ..
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   Module 1/unix_shell_session[m
+	[32mnew file:   Module 1/unix_shell_session:Zone.Identifier[m
+	[32mmodified:   readme.md[m
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mdeleted:    Module 1/unix_shell_session:Zone.Identifier[m
+
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git commit -m ""U"n"i"x" "s"e"s"s"i"o"n" "a"d"d"e"d"
+[?2004l[main 9a277ca] Unix session added
+ 3 files changed, 9798 insertions(+)
+ create mode 100644 Module 1/unix_shell_session
+ create mode 100644 Module 1/unix_shell_session:Zone.Identifier
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git push
+[?2004lEnumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  20% (1/5)Writing objects:  40% (2/5)Writing objects:  60% (3/5)Writing objects:  80% (4/5)Writing objects: 100% (5/5)Writing objects: 100% (5/5), 260.40 KiB | 3.30 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/807480Nikhil/TAMLEP
+   8439d98..9a277ca  main -> main
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ 
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git pushcommit -m "Unix session added"status[K[5Pcd ..[3Plsrm unix_shell_session:Zone.Identifier[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -F[Kcd Module\ 1/[3Pgit status[1Padd .statusecho << readme.md
+dsg
+done
+[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C>>
+[K
+[K
+[K[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit add[C[C[C[C[C[C[C[C[C[Cpull[Kdiff --stagedpull[K
+[?2004lAlready up to date.
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git log
+[?2004l[?1h=[33mcommit 9a277ca1c644d8717153413908b26049404c938c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m[m
+Author: 807480Nikhil <nikhil.varshney@tigeranalytics.com>[m
+Date:   Sat Nov 16 04:52:52 2024 +0000[m
+[m
+    Unix session added[m
+[m
+[33mcommit 8439d98a992d024d638959fbfb836ea41e765f83[m[m
+Author: 807480Nikhil <nikhil.varshney@tigeranalytics.com>[m
+Date:   Fri Nov 15 11:56:50 2024 +0000[m
+[m
+    readme added[m
+[K[?1l>[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git log -p -2
+[?2004l[?1h=[33mcommit 9a277ca1c644d8717153413908b26049404c938c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m[m
+Author: 807480Nikhil <nikhil.varshney@tigeranalytics.com>[m
+Date:   Sat Nov 16 04:52:52 2024 +0000[m
+[m
+    Unix session added[m
+[m
+[1mdiff --git a/Module 1/unix_shell_session b/Module 1/unix_shell_session[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..670e323[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/Module 1/unix_shell_session[m       [m
+[36m@@ -0,0 +1,9797 @@[m[m
+[32m+[m[32mScript started on 2024-11-15 05:18:52+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="168" LINES="44"][m[m
+[32m+[m[32mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ ls[m[41m[7m^M[27m[m[m
+[32m+[m[32m[7m^M[27mmy_record  [0m[01;34mshell-lesson-data[0m[m[41m[7m^M[27m[m[m
+[32m+[m[32mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ ks[m[41m[7m^M[27m[m[m
+[32m+[m[32m[7m^M[27mCommand 'ks' not found, but can be installed with:[m[41m[7m^M[27m[m[m
+[32m+[m[32msudo apt install qdl[m[41m[7m^M[27m[m[m
+[32m+[m[32mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ ls -F[m[41m[7m^M[27m[m[m
+[32m+[m[32m[7m^M[27mmy_record  [0m[01;34mshell-lesson-data[0m/[m[41m[7m^M[27m[m[m
+[32m+[m[32mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^[27m[m [32m[m[32m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[7m^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M[27m[m [32m[m[32m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[7m^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M[27m[m [32m[m[32m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[7m^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M[27m[m [32m[m[32m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[7m^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M[27m[m [32m[m[32m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[7m^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M[27m[m [32m[m[32m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[7m^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M[27m[m [32m[m[32m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[7m^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M[27m[m [32m[m[32m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[7m^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M[27m[m [32m[m[32m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[7m^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M[27m[m [32m[m[32m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[7m^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M[27m[m [32m[m[32m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[7m^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M[27m[m [32m[m[32m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[7m^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M[27m[m [32m[m[32m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[7m^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M[27m[m [32m[m[32m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[7m^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M[27m[m [32m[m[32m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[01;32m[00m[01;34m[00m[7m^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ [7m^M^M[27mikhil@DESKTOP-2LKE0I5: ~[7m^G[27m[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ ls --help[m[41m[7m^M[27m[m[m
+[32m+[m[32m[7m^M[27mUsage: ls [OPTION]... [FILE]...[m[41m[7m^M[27m[m[m
+[32m+[m[32mList information about the FILEs (the current directory by default).[m[41m[7m^M[27m[m[m
+[32m+[m[32mSort entries alphabetically if none of -cftuvSUX nor --sort is specified.[m[41m[7m^M[27m[m[m
+[32m+[m[41m[7m^M[27m[m[m
+[32m+[m[32mMandatory arguments to long options are mandatory for short options too.[m[41m[7m^M[27m[m[m
+[32m+[m[32m  -a, --all                  do not ignore entries starting with .[m[41m[7m^M[27m[m[m
+[32m+[m[32m  -A, --almost-all           do not list implied . and ..[m[41m[7m^M[27m[m[m
+:[K[K[32m+[m[32m      --author               with -l, print the author of each file[m[41m[7m^M[27m[m[m
+:[K[K[HM[33mcommit 9a277ca1c644d8717153413908b26049404c938c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m[m
+[44;1H[K:[K[K[?1l>[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ gu[Kit log stat
+[?2004lfatal: ambiguous argument 'stat': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git log stat-stat
+[?2004lerror: did you mean `--stat` (with two dashes)?
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git log -stat-stat
+[?2004l[?1h=[33mcommit 9a277ca1c644d8717153413908b26049404c938c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m[m
+Author: 807480Nikhil <nikhil.varshney@tigeranalytics.com>[m
+Date:   Sat Nov 16 04:52:52 2024 +0000[m
+[m
+    Unix session added[m
+[m
+ Module 1/unix_shell_session                 | 9797 [32m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m[m
+ Module 1/unix_shell_session:Zone.Identifier |    0[m
+ readme.md                                   |    1 [32m+[m[m
+ 3 files changed, 9798 insertions(+)[m
+[m
+[33mcommit 8439d98a992d024d638959fbfb836ea41e765f83[m[m
+Author: 807480Nikhil <nikhil.varshney@tigeranalytics.com>[m
+Date:   Fri Nov 15 11:56:50 2024 +0000[m
+[m
+    readme added[m
+[m
+ readme.md | 0[m
+ 1 file changed, 0 insertions(+), 0 deletions(-)[m
+[K[?1l>[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git diff
+[?2004l[?1h=[1mdiff --git a/Module 1/unix_shell_session:Zone.Identifier b/Module 1/unix_shell_session:Zone.Identifier[m[m
+[1mdeleted file mode 100644[m[m
+[1mindex e69de29..0000000[m[m
+[K[?1l>[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git add .
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mdeleted:    Module 1/unix_shell_session:Zone.Identifier[m
+
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git pull
+[?2004lremote: Enumerating objects: 5, done.[K
+remote: Counting objects:  20% (1/5)[Kremote: Counting objects:  40% (2/5)[Kremote: Counting objects:  60% (3/5)[Kremote: Counting objects:  80% (4/5)[Kremote: Counting objects: 100% (5/5)[Kremote: Counting objects: 100% (5/5), done.[K
+remote: Compressing objects:  50% (1/2)[Kremote: Compressing objects: 100% (2/2)[Kremote: Compressing objects: 100% (2/2), done.[K
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)[K
+Unpacking objects:  33% (1/3)Unpacking objects:  66% (2/3)Unpacking objects: 100% (3/3)Unpacking objects: 100% (3/3), 1005 bytes | 100.00 KiB/s, done.
+From https://github.com/807480Nikhil/TAMLEP
+   9a277ca..fdc310f  main       -> origin/main
+Updating 9a277ca..fdc310f
+Fast-forward
+ Module 1/unix_shell_session:Zone.Identifier | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 Module 1/unix_shell_session:Zone.Identifier
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git pull
+[?2004lAlready up to date.
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git d[Kstatus
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git --name [K-=[Konly
+[?2004lunknown option: --name-only
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git --name-only[C --name-onlyl --name-onlyo --name-onlyg --name-only
+[?2004l[?1h=[33mcommit fdc310f5b89065ab63ab5b28620b6cc883814435[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m[m
+Author: 807480Nikhil <nikhil.varshney@tigeranalytics.com>[m
+Date:   Sat Nov 16 10:24:52 2024 +0530[m
+[m
+    Delete Module 1/unix_shell_session:Zone.Identifier[m
+[m
+Module 1/unix_shell_session:Zone.Identifier[m
+[m
+[33mcommit 9a277ca1c644d8717153413908b26049404c938c[m[m
+Author: 807480Nikhil <nikhil.varshney@tigeranalytics.com>[m
+Date:   Sat Nov 16 04:52:52 2024 +0000[m
+[m
+    Unix session added[m
+[m
+Module 1/unix_shell_session[m
+Module 1/unix_shell_session:Zone.Identifier[m
+readme.md[m
+[m
+[33mcommit 8439d98a992d024d638959fbfb836ea41e765f83[m[m
+Author: 807480Nikhil <nikhil.varshney@tigeranalytics.com>[m
+Date:   Fri Nov 15 11:56:50 2024 +0000[m
+[m
+    readme added[m
+[m
+readme.md[m
+[K[?1l>[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$  [Kgit --graph
+[?2004lunknown option: --graph
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git --graph[C --graphl --grapho --graphg --graph
+[?2004l[?1h=* [33mcommit fdc310f5b89065ab63ab5b28620b6cc883814435[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m[m
+[31m|[m Author: 807480Nikhil <nikhil.varshney@tigeranalytics.com>[m
+[31m|[m Date:   Sat Nov 16 10:24:52 2024 +0530[m
+[31m|[m [m
+[31m|[m     Delete Module 1/unix_shell_session:Zone.Identifier[m
+[31m|[m [m
+* [33mcommit 9a277ca1c644d8717153413908b26049404c938c[m[m
+[31m|[m Author: 807480Nikhil <nikhil.varshney@tigeranalytics.com>[m
+[31m|[m Date:   Sat Nov 16 04:52:52 2024 +0000[m
+[31m|[m [m
+[31m|[m     Unix session added[m
+[31m|[m [m
+* [33mcommit 8439d98a992d024d638959fbfb836ea41e765f83[m[m
+  Author: 807480Nikhil <nikhil.varshney@tigeranalytics.com>[m
+  Date:   Fri Nov 15 11:56:50 2024 +0000[m
+  [m
+      readme added[m
+[K[?1l>[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git n[Klog --since=2.weeks
+[?2004l[?1h=[33mcommit fdc310f5b89065ab63ab5b28620b6cc883814435[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m[m
+Author: 807480Nikhil <nikhil.varshney@tigeranalytics.com>[m
+Date:   Sat Nov 16 10:24:52 2024 +0530[m
+[m
+    Delete Module 1/unix_shell_session:Zone.Identifier[m
+[m
+[33mcommit 9a277ca1c644d8717153413908b26049404c938c[m[m
+Author: 807480Nikhil <nikhil.varshney@tigeranalytics.com>[m
+Date:   Sat Nov 16 04:52:52 2024 +0000[m
+[m
+    Unix session added[m
+[m
+[33mcommit 8439d98a992d024d638959fbfb836ea41e765f83[m[m
+Author: 807480Nikhil <nikhil.varshney@tigeranalytics.com>[m
+Date:   Fri Nov 15 11:56:50 2024 +0000[m
+[m
+    readme added[m
+[K[?1l>[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git log --since=2.weeks[K[K[K[K[Kdays
+[?2004l[?1h=[33mcommit fdc310f5b89065ab63ab5b28620b6cc883814435[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m[m
+Author: 807480Nikhil <nikhil.varshney@tigeranalytics.com>[m
+Date:   Sat Nov 16 10:24:52 2024 +0530[m
+[m
+    Delete Module 1/unix_shell_session:Zone.Identifier[m
+[m
+[33mcommit 9a277ca1c644d8717153413908b26049404c938c[m[m
+Author: 807480Nikhil <nikhil.varshney@tigeranalytics.com>[m
+Date:   Sat Nov 16 04:52:52 2024 +0000[m
+[m
+    Unix session added[m
+[m
+[33mcommit 8439d98a992d024d638959fbfb836ea41e765f83[m[m
+Author: 807480Nikhil <nikhil.varshney@tigeranalytics.com>[m
+Date:   Fri Nov 15 11:56:50 2024 +0000[m
+[m
+    readme added[m
+[K[?1l>[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git log --since=2.days[1P.days1.days
+[?2004l[?1h=[33mcommit fdc310f5b89065ab63ab5b28620b6cc883814435[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m[m
+Author: 807480Nikhil <nikhil.varshney@tigeranalytics.com>[m
+Date:   Sat Nov 16 10:24:52 2024 +0530[m
+[m
+    Delete Module 1/unix_shell_session:Zone.Identifier[m
+[m
+[33mcommit 9a277ca1c644d8717153413908b26049404c938c[m[m
+Author: 807480Nikhil <nikhil.varshney@tigeranalytics.com>[m
+Date:   Sat Nov 16 04:52:52 2024 +0000[m
+[m
+    Unix session added[m
+[m
+[33mcommit 8439d98a992d024d638959fbfb836ea41e765f83[m[m
+Author: 807480Nikhil <nikhil.varshney@tigeranalytics.com>[m
+Date:   Fri Nov 15 11:56:50 2024 +0000[m
+[m
+    readme added[m
+[K[?1l>[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   readme.md[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git status [K[K[K[K[K[K[Krestore readme.md
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ giit[K[Kt status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   readme.md[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git add readme.md 
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git restore readme.md 
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   readme.md[m
+
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git restore --staged readme.md 
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   readme.md[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git [K[K[K[Kgit restore ree[K[Keadme.md [K
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git stataus[K[K[Kus
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git pull
+[?2004lAlready up to date.
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git remote show origin
+[?2004l* remote origin
+  Fetch URL: https://TAMLEP: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@github.com/807480Nikhil/TAMLEP
+  Push  URL: https://TAMLEP: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@github.com/807480Nikhil/TAMLEP
+  HEAD branch: main
+  Remote branch:
+    main tracked
+  Local branch configured for 'git pull':
+    main merges with remote main
+  Local ref configured for 'git push':
+    main pushes to main (up to date)
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git tag
+[?2004l[?1h=[K[?1l>[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git last
+[?2004lgit: 'last' is not a git command. See 'git --help'.
+
+The most similar commands are
+	blame
+	lfs
+	reset
+	stash
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git branch iss53
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git checkout iss53
+[?2004lSwitched to branch 'iss53'
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git branch -v
+[?2004l[?1h=* [32miss53[m fdc310f Delete Module 1/unix_shell_session:Zone.Identifier[m
+  main [m fdc310f Delete Module 1/unix_shell_session:Zone.Identifier[m
+[K[?1l>[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git branch -a[K-all
+[?2004l[?1h=* [32miss53[m[m
+  main[m[m
+  [31mremotes/origin/main[m[m
+[K[?1l>[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git checkout iss53-iss53biss53 iss53
+[?2004lfatal: a branch named 'iss53' already exists
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git pusj[Kh origin iss53
+[?2004lEnumerating objects: 11, done.
+Counting objects:   9% (1/11)Counting objects:  18% (2/11)Counting objects:  27% (3/11)Counting objects:  36% (4/11)Counting objects:  45% (5/11)Counting objects:  54% (6/11)Counting objects:  63% (7/11)Counting objects:  72% (8/11)Counting objects:  81% (9/11)Counting objects:  90% (10/11)Counting objects: 100% (11/11)Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects:  14% (1/7)Compressing objects:  28% (2/7)Compressing objects:  42% (3/7)Compressing objects:  57% (4/7)Compressing objects:  71% (5/7)Compressing objects:  85% (6/7)Compressing objects: 100% (7/7)Compressing objects: 100% (7/7), done.
+Writing objects:   9% (1/11)Writing objects:  18% (2/11)Writing objects:  27% (3/11)Writing objects:  36% (4/11)Writing objects:  45% (5/11)Writing objects:  54% (6/11)Writing objects:  63% (7/11)Writing objects:  72% (8/11)Writing objects:  81% (9/11)Writing objects:  90% (10/11)Writing objects: 100% (11/11)Writing objects: 100% (11/11), 261.56 KiB | 1.71 MiB/s, done.
+Total 11 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'iss53' on GitHub by visiting:[K
+remote:      https://github.com/807480Nikhil/TAMLEP/pull/new/iss53[K
+remote: 
+To https://github.com/807480Nikhil/TAMLEP
+ * [new branch]      iss53 -> iss53
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git branch -a
+[?2004l[?1h=* [32miss53[m[m
+  main[m[m
+  [31mremotes/origin/iss53[m[m
+  [31mremotes/origin/main[m[m
+[K[?1l>[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git branch iss53
+[?2004lfatal: a branch named 'iss53' already exists
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git add *
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git commit -m " [Kcomited [K[K[Kted to iss53"
+[?2004lOn branch iss53
+nothing to commit, working tree clean
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git commit -m "comitted to iss53"add *[Kbranch iss53[3P-apush origin iss53checkout -b[C[C[C[C[C[C[5Pbranch --allv[Kcheckout iss53[2Pbranch[C[C[C[C[C[C[8Plast[1Ptagremote show originpull[Kstatusrestore readme.md[11Pstatusrestore --staged readme.md status[Krestore readme.md [4Padd[C[C[C[C[C[C[C[C[C[C[C[8Pstatusrestore readme.md[11Pstatuslog --since=1.days2.daysweeks[8Pgraph[4P--graphlog --name-only[4P--name-only[5Pstatus[2Ppullstatus[1Padd .[1Pdifflog --stat[1Pstat[1Pstat-p -2[Kpullshcommit -m "Unix session added"status[K[5Pcd ..[3Plsrm unix_shell_session:Zone.Identifier[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -F[Kcd Module\ 1/[3Pgit status[1Padd .statusecho << readme.md
+dsg
+done
+[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C>>
+[K
+[K
+[K[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit add[C[C[C[C[C[C[C[C[C[Cpull[Kdiff --staged[4Pvim readme.mdgit status -s[5Pdiffstatus[2Pdiffcd TAMLEP/[6Pexitgit pushcommit -m "readme added"status[Kadd readme.mdls[Ktouch readme.md[5Pcd TAMLEP/git clone https://TAMLEP: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@github.com/807480Nikhil/TAMLEP[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd nikhil/[K..[Kgit pushcommit -m "unix session added"nfig --global credential-helper store[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbash git[Kgit bashconfig -lpush -u origin main[Kcommit -m "unix session added"status[K[1Padd .statuscd TAMLEP/git clone https://github.com/807480Nikhil/TAMLEP.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd[Kgit help -h-h[Kvman gitgit manhelp config[K--versionsudo apt-get install gitexit[Kls --help[5Pexit[2Pkslsexitsudo apt get install gitexit[Kls --helpsudo apt get install gitexit[Kcd Dls --help[Kmkdir --help[K[3Plsmkdir --helpls [K--help[5Pcd Dexitsudo apt get install git[15Pls --help[5Pexitsudo apt get install gitexit[K[2Plsksexitls --help[5Pexitsudo apt-get install git[11Pgit --version[5Phelp configman[Kman git[1Pgit -vhhelp -hpwd[Kgit clone https://github.com/807480Nikhil/TAMLEP.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd TAMLEP/[Kgit status[1Padd .statuscommit -m "unix session added"push[K -u origin main[10Pconfig -l[5Pbashbash gitgit config --global credential-helper store[9Pmmit -m "unix session added"push[K[3Pcd ..nikhil/git clone https://TAMLEP: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@github.com/807480Nikhil/TAMLEP[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd TAMLEP/[Ktouch readme.mdls[Kgit add readme.md[7Pstatuscommit -m "readme added"push[K[4Pexitcd TAMLEP/[2Pgit diffstatus[2Pdiffstatus -svim readme.mdgit diff --stagedpull[Kadd readme.mdecho >>[C[C[C[C[C[C[C[C[C[C<<
+dsg
+done
+[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pgit status
+[K
+[K
+[K[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Padd .statuscd Module\ 1/[8Pls -Frm unix_shell_session:Zone.Identifier[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd ..git statuscommit -m "Unix session added"push[Kll[1Plog -p -2[1Pstat-stat-stat[6Pdiffadd .status[2Ppullstatus--name-onlylog --name-only[8P--graphlog --graphsince=2.weeks[1Pdays1.days[12Pstatusrestore readme.md[11Pstatusadd readme.md [4@restore[C[C[C[C[C[C[C[C[C[C[C[12Pstatusrestore --staged readme.md status[Krestore readme.md[11Pstatus[2Ppullremote show origintag[Klastbranch iss53[2@checkout[C[C[C[C[C[C[5Pbranch -v-allcheckout -b iss53push origin[C[C[C[C[C[C[8Pbranch -aiss53[7Padd *commit -m "comitted to iss53"[Kexit
+[?2004lexit
+
+Script done on 2024-11-21 06:08:30+00:00 [COMMAND_EXIT_CODE="1"]
