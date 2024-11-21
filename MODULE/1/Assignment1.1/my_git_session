@@ -805,3 +805,479 @@ nothing to commit, working tree clean
 [?2004lexit
 
 Script done on 2024-11-21 06:08:30+00:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2024-11-21 06:29:54+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="168" LINES="44"]
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ ^[[C[K[K[Kgit clone https://TAMLEP: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@github.com/807480Nikhil/TAMLEP
+[?2004lCloning into 'TAMLEP'...
+remote: Enumerating objects: 3, done.[K
+remote: Counting objects:  33% (1/3)[Kremote: Counting objects:  66% (2/3)[Kremote: Counting objects: 100% (3/3)[Kremote: Counting objects: 100% (3/3), done.[K
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)[K
+Receiving objects:  33% (1/3)Receiving objects:  66% (2/3)Receiving objects: 100% (3/3)Receiving objects: 100% (3/3), done.
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ git branch develop
+[?2004lfatal: not a git repository (or any of the parent directories): .git
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ cd TAMLEP/\[K
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ cd TAMLEP/git branch develop
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git branch -a
+[?2004l[?1h=  develop[m[m
+* [32mmain[m[m
+  [31mremotes/origin/HEAD[m -> origin/main[m
+  [31mremotes/origin/main[m[m
+[K[?1l>[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git checkout -b develop
+[?2004lfatal: a branch named 'develop' already exists
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git add *
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git push origin develop[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[?2004lEverything up-to-date
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git push origin develop
+[?2004lTotal 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'develop' on GitHub by visiting:[K
+remote:      https://github.com/807480Nikhil/TAMLEP/pull/new/develop[K
+remote: 
+To https://github.com/807480Nikhil/TAMLEP
+ * [new branch]      develop -> develop
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git ceckout [K[K[K[K[K[K[K[K[K checkout develop
+[?2004lSwitched to branch 'develop'
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ mkdir MODULE 1
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ cd MODULE/
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP/MODULE[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP/MODULE[00m$ mkdir 1
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP/MODULE[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP/MODULE[00m$ mkdir [K[K[K[K[K[Kcd 1/
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP/MODULE/1[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP/MODULE/1[00m$ mkdir Assignment1.1
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP/MODULE/1[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP/MODULE/1[00m$ cd as[K[KAssignment1.1/
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP/MODULE/1/Assignment1.1[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP/MODULE/1/Assignment1.1[00m$ ls
+[?2004lmy_git_session  my_git_session:Zone.Identifier  unix_shell_session  unix_shell_session:Zone.Identifier
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP/MODULE/1/Assignment1.1[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP/MODULE/1/Assignment1.1[00m$ ls
+[?2004lmy_git_session  unix_shell_session
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP/MODULE/1/Assignment1.1[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP/MODULE/1/Assignment1.1[00m$ cd ..
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP/MODULE/1[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP/MODULE/1[00m$ cd ..
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP/MODULE[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP/MODULE[00m$ cd ..
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git status
+[?2004lOn branch develop
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mMODULE/[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git add .
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git status
+[?2004lOn branch develop
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   MODULE/1/Assignment1.1/my_git_session[m
+	[32mnew file:   MODULE/1/Assignment1.1/unix_shell_session[m
+
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git commit -m ""A"s"s"i"g"n"[1P"n"m"e"n"t"1"."1" "U"n"i"x" "g"i"t"&git" git"
+[?2004l[develop 68e1718] Assignment1.1 Unix & git
+ 2 files changed, 10604 insertions(+)
+ create mode 100644 MODULE/1/Assignment1.1/my_git_session
+ create mode 100644 MODULE/1/Assignment1.1/unix_shell_session
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git push
+[?2004lfatal: The current branch develop has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin develop
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git push --set-upstream origin develop
+[?2004lEnumerating objects: 8, done.
+Counting objects:  12% (1/8)Counting objects:  25% (2/8)Counting objects:  37% (3/8)Counting objects:  50% (4/8)Counting objects:  62% (5/8)Counting objects:  75% (6/8)Counting objects:  87% (7/8)Counting objects: 100% (8/8)Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  14% (1/7)Writing objects:  28% (2/7)Writing objects:  42% (3/7)Writing objects:  57% (4/7)Writing objects:  71% (5/7)Writing objects:  85% (6/7)Writing objects: 100% (7/7)Writing objects: 100% (7/7), 271.39 KiB | 3.05 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: [1;31merror[m: GH013: Repository rule violations found for refs/heads/develop.[K
+remote: 
+remote: - GITHUB PUSH PROTECTION[K
+remote:   —————————————————————————————————————————[K
+remote:     Resolve the following violations before pushing again[K
+remote: 
+remote:     - Push cannot contain secrets[K
+remote: 
+remote:     [K
+remote:      (?) Learn how to resolve a blocked push[K
+remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push[K
+remote:     [K
+remote:     [K
+remote:       —— GitHub Personal Access Token ——————————————————————[K
+remote:        locations:[K
+remote:          - commit: 68e171844c07c9a11591559f79d2c7ebb1620c56[K
+remote:            path: MODULE/1/Assignment1.1/my_git_session:324[K
+remote:          - commit: 68e171844c07c9a11591559f79d2c7ebb1620c56[K
+remote:            path: MODULE/1/Assignment1.1/my_git_session:738[K
+remote:          - commit: 68e171844c07c9a11591559f79d2c7ebb1620c56[K
+remote:            path: MODULE/1/Assignment1.1/my_git_session:739[K
+remote:          - commit: 68e171844c07c9a11591559f79d2c7ebb1620c56[K
+remote:            path: MODULE/1/Assignment1.1/my_git_session:798[K
+remote:          - commit: 68e171844c07c9a11591559f79d2c7ebb1620c56[K
+remote:            path: MODULE/1/Assignment1.1/my_git_session:798[K
+remote:     [K
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.[K
+remote:        https://github.com/807480Nikhil/TAMLEP/security/secret-scanning/unblock-secret/2p9HYsHE9I37MzKmybYOdfSGjsB[K
+remote:     [K
+remote: 
+remote: 
+To https://github.com/807480Nikhil/TAMLEP
+ [31m! [remote rejected][m develop -> develop (push declined due to repository rule violations)
+[31merror: failed to push some refs to 'https://github.com/807480Nikhil/TAMLEP'
+[m[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git push --set-upstream origin develop
+[?2004lEnumerating objects: 8, done.
+Counting objects:  12% (1/8)Counting objects:  25% (2/8)Counting objects:  37% (3/8)Counting objects:  50% (4/8)Counting objects:  62% (5/8)Counting objects:  75% (6/8)Counting objects:  87% (7/8)Counting objects: 100% (8/8)Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  14% (1/7)Writing objects:  28% (2/7)Writing objects:  42% (3/7)Writing objects:  57% (4/7)Writing objects:  71% (5/7)Writing objects:  85% (6/7)Writing objects: 100% (7/7)Writing objects: 100% (7/7), 271.39 KiB | 2.80 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: [1;31merror[m: GH013: Repository rule violations found for refs/heads/develop.[K
+remote: 
+remote: - GITHUB PUSH PROTECTION[K
+remote:   —————————————————————————————————————————[K
+remote:     Resolve the following violations before pushing again[K
+remote: 
+remote:     - Push cannot contain secrets[K
+remote: 
+remote:     [K
+remote:      (?) Learn how to resolve a blocked push[K
+remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push[K
+remote:     [K
+remote:     [K
+remote:       —— GitHub Personal Access Token ——————————————————————[K
+remote:        locations:[K
+remote:          - commit: 68e171844c07c9a11591559f79d2c7ebb1620c56[K
+remote:            path: MODULE/1/Assignment1.1/my_git_session:324[K
+remote:          - commit: 68e171844c07c9a11591559f79d2c7ebb1620c56[K
+remote:            path: MODULE/1/Assignment1.1/my_git_session:738[K
+remote:          - commit: 68e171844c07c9a11591559f79d2c7ebb1620c56[K
+remote:            path: MODULE/1/Assignment1.1/my_git_session:739[K
+remote:          - commit: 68e171844c07c9a11591559f79d2c7ebb1620c56[K
+remote:            path: MODULE/1/Assignment1.1/my_git_session:798[K
+remote:          - commit: 68e171844c07c9a11591559f79d2c7ebb1620c56[K
+remote:            path: MODULE/1/Assignment1.1/my_git_session:798[K
+remote:     [K
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.[K
+remote:        https://github.com/807480Nikhil/TAMLEP/security/secret-scanning/unblock-secret/2p9HYsHE9I37MzKmybYOdfSGjsB[K
+remote:     [K
+remote: 
+remote: 
+To https://github.com/807480Nikhil/TAMLEP
+ [31m! [remote rejected][m develop -> develop (push declined due to repository rule violations)
+[31merror: failed to push some refs to 'https://github.com/807480Nikhil/TAMLEP'
+[m[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git status
+[?2004lOn branch develop
+nothing to commit, working tree clean
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git push origin
+[?2004lfatal: The current branch develop has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin develop
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git push origin[5Pstatuspush --set-upstream origin develop
+[?2004lEnumerating objects: 8, done.
+Counting objects:  12% (1/8)Counting objects:  25% (2/8)Counting objects:  37% (3/8)Counting objects:  50% (4/8)Counting objects:  62% (5/8)Counting objects:  75% (6/8)Counting objects:  87% (7/8)Counting objects: 100% (8/8)Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  14% (1/7)Writing objects:  28% (2/7)Writing objects:  42% (3/7)Writing objects:  57% (4/7)Writing objects:  71% (5/7)Writing objects:  85% (6/7)Writing objects: 100% (7/7)Writing objects: 100% (7/7), 271.39 KiB | 3.88 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: [1;31merror[m: GH013: Repository rule violations found for refs/heads/develop.[K
+remote: 
+remote: - GITHUB PUSH PROTECTION[K
+remote:   —————————————————————————————————————————[K
+remote:     Resolve the following violations before pushing again[K
+remote: 
+remote:     - Push cannot contain secrets[K
+remote: 
+remote:     [K
+remote:      (?) Learn how to resolve a blocked push[K
+remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push[K
+remote:     [K
+remote:     [K
+remote:       —— GitHub Personal Access Token ——————————————————————[K
+remote:        locations:[K
+remote:          - commit: 68e171844c07c9a11591559f79d2c7ebb1620c56[K
+remote:            path: MODULE/1/Assignment1.1/my_git_session:324[K
+remote:          - commit: 68e171844c07c9a11591559f79d2c7ebb1620c56[K
+remote:            path: MODULE/1/Assignment1.1/my_git_session:738[K
+remote:          - commit: 68e171844c07c9a11591559f79d2c7ebb1620c56[K
+remote:            path: MODULE/1/Assignment1.1/my_git_session:739[K
+remote:          - commit: 68e171844c07c9a11591559f79d2c7ebb1620c56[K
+remote:            path: MODULE/1/Assignment1.1/my_git_session:798[K
+remote:          - commit: 68e171844c07c9a11591559f79d2c7ebb1620c56[K
+remote:            path: MODULE/1/Assignment1.1/my_git_session:798[K
+remote:     [K
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.[K
+remote:        https://github.com/807480Nikhil/TAMLEP/security/secret-scanning/unblock-secret/2p9HYsHE9I37MzKmybYOdfSGjsB[K
+remote:     [K
+remote: 
+remote: 
+To https://github.com/807480Nikhil/TAMLEP
+ [31m! [remote rejected][m develop -> develop (push declined due to repository rule violations)
+[31merror: failed to push some refs to 'https://github.com/807480Nikhil/TAMLEP'
+[m[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git stash
+[?2004lNo local changes to save
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git pull
+[?2004lThere is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> develop
+
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git checkout main
+[?2004lSwitched to branch 'main'
+Your branch is up to date with 'origin/main'.
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ go[Kit pull
+[?2004lAlready up to date.
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git branch -a
+[?2004l[?1h=  develop[m[m
+* [32mmain[m[m
+  [31mremotes/origin/HEAD[m -> origin/main[m
+  [31mremotes/origin/develop[m[m
+  [31mremotes/origin/main[m[m
+[K[?1l>[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git checkout develop
+[?2004lSwitched to branch 'develop'
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ ls
+[?2004l[0m[01;34mMODULE[0m  README.md
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git statusa[K
+[?2004lOn branch develop
+nothing to commit, working tree clean
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git pull origin[K[K[K[K[K[K[K[K[Ksh origin
+[?2004lfatal: The current branch develop has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin develop
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git checkout maihn[K[Kn
+[?2004lSwitched to branch 'main'
+Your branch is up to date with 'origin/main'.
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git pull
+[?2004lFrom https://github.com/807480Nikhil/TAMLEP
+ * [new branch]      dev        -> origin/dev
+Already up to date.
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git checkout dev
+[?2004lbranch 'dev' set up to track 'origin/dev'.
+Switched to a new branch 'dev'
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ ls
+[?2004lREADME.md
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git status
+[?2004lOn branch dev
+Your branch is up to date with 'origin/dev'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mMODULE/[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git ad .
+[?2004lgit: 'ad' is not a git command. See 'git --help'.
+
+The most similar commands are
+	add
+	am
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git ad .s .[1P .d .
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git status
+[?2004lOn branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   MODULE/1/Assignment1.1/my_git_session[m
+	[32mnew file:   MODULE/1/Assignment1.1/my_git_session:Zone.Identifier[m
+	[32mnew file:   MODULE/1/Assignment1.1/unix_shell_session[m
+	[32mnew file:   MODULE/1/Assignment1.1/unix_shell_session:Zone.Identifier[m
+
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git atstus
+[?2004lgit: 'atstus' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git atstus[C[C[1Ptus[1Pus[1Ptusstus[Ctusatus
+[?2004lOn branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   MODULE/1/Assignment1.1/my_git_session[m
+	[32mnew file:   MODULE/1/Assignment1.1/my_git_session:Zone.Identifier[m
+	[32mnew file:   MODULE/1/Assignment1.1/unix_shell_session[m
+	[32mnew file:   MODULE/1/Assignment1.1/unix_shell_session:Zone.Identifier[m
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mdeleted:    MODULE/1/Assignment1.1/my_git_session:Zone.Identifier[m
+	[31mdeleted:    MODULE/1/Assignment1.1/unix_shell_session:Zone.Identifier[m
+
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git rm ^V[KMODULE/1/Assignment1.1/my_git_session:MODULE/1/Assignment1.1/my_git_session\:Zone.Identifier [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KZMODULE/1/Assignment1.1/my_git_session\:Zone.Identifier [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KZone.Identifier
+[?2004lrm 'MODULE/1/Assignment1.1/my_git_session:Zone.Identifier'
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git rm MODULE/1/Assignment1.1/my_git_session:Zone.Identifier[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kunix_shell_session:Zone.Identifier
+[?2004lrm 'MODULE/1/Assignment1.1/unix_shell_session:Zone.Identifier'
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git status
+[?2004lOn branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   MODULE/1/Assignment1.1/my_git_session[m
+	[32mnew file:   MODULE/1/Assignment1.1/unix_shell_session[m
+
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git commit -m " a s s i g n [C i n [C d e v " 
+[?2004l[dev 6a4085e] assign in dev
+ 2 files changed, 10604 insertions(+)
+ create mode 100644 MODULE/1/Assignment1.1/my_git_session
+ create mode 100644 MODULE/1/Assignment1.1/unix_shell_session
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git push origin
+[?2004lEnumerating objects: 8, done.
+Counting objects:  12% (1/8)Counting objects:  25% (2/8)Counting objects:  37% (3/8)Counting objects:  50% (4/8)Counting objects:  62% (5/8)Counting objects:  75% (6/8)Counting objects:  87% (7/8)Counting objects: 100% (8/8)Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  14% (1/7)Writing objects:  28% (2/7)Writing objects:  42% (3/7)Writing objects:  57% (4/7)Writing objects:  71% (5/7)Writing objects:  85% (6/7)Writing objects: 100% (7/7)Writing objects: 100% (7/7), 271.37 KiB | 1.97 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: [1;31merror[m: GH013: Repository rule violations found for refs/heads/dev.[K
+remote: 
+remote: - GITHUB PUSH PROTECTION[K
+remote:   —————————————————————————————————————————[K
+remote:     Resolve the following violations before pushing again[K
+remote: 
+remote:     - Push cannot contain secrets[K
+remote: 
+remote:     [K
+remote:      (?) Learn how to resolve a blocked push[K
+remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push[K
+remote:     [K
+remote:     [K
+remote:       —— GitHub Personal Access Token ——————————————————————[K
+remote:        locations:[K
+remote:          - commit: 6a4085eb8eaf220349b9000ebdc5ec8302d37525[K
+remote:            path: MODULE/1/Assignment1.1/my_git_session:324[K
+remote:          - commit: 6a4085eb8eaf220349b9000ebdc5ec8302d37525[K
+remote:            path: MODULE/1/Assignment1.1/my_git_session:738[K
+remote:          - commit: 6a4085eb8eaf220349b9000ebdc5ec8302d37525[K
+remote:            path: MODULE/1/Assignment1.1/my_git_session:739[K
+remote:          - commit: 6a4085eb8eaf220349b9000ebdc5ec8302d37525[K
+remote:            path: MODULE/1/Assignment1.1/my_git_session:798[K
+remote:          - commit: 6a4085eb8eaf220349b9000ebdc5ec8302d37525[K
+remote:            path: MODULE/1/Assignment1.1/my_git_session:798[K
+remote:     [K
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.[K
+remote:        https://github.com/807480Nikhil/TAMLEP/security/secret-scanning/unblock-secret/2p9HYsHE9I37MzKmybYOdfSGjsB[K
+remote:     [K
+remote: 
+remote: 
+To https://github.com/807480Nikhil/TAMLEP
+ [31m! [remote rejected][m dev -> dev (push declined due to repository rule violations)
+[31merror: failed to push some refs to 'https://github.com/807480Nikhil/TAMLEP'
+[m[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ cd ..
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ ls
+[?2004lmy_git_session  [0m[01;34mshell-lesson-data[0m  unix_shell_session
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ lscd ..git push origincommit -m "assign in dev" status[Krm MODULE/1/Assignment1.1/unix_shell_session:Zone.Identifier[4Pmy_git_session:Zone.Identifier[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Katstusstatus[1Padd .[1P .statusls[Kgit checkout dev[8Ppullcheckout main[2Ppush origin[5Pstatusls[Kgit checkout develop[7Pbranch -a[5Ppullcheckout mainpull[Kstashpush --set-upstream origin developorigin[K[5Pstatuspush --set-upstream origin develop[Kcommit -m "Assignment1.1 Unix & git"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[K[1Padd .status[5Pcd ..[3Plscd Assignment1.1/mkdir Assignment1.1cd 1/[Kmkdir 1cd MODULE/mkdir MODULE 1git checkout develop[3@push origin[C[C[C[C[C[C[C[C[Kadd *checkout -b develop[10Pbranch -adevelop[8Pcd TAMLEP/git branch developclone https://TAMLEP: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@github.com/807480Nikhil/TAMLEP[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kgit commit -m "comitted to iss53"add *[Kbranch iss53[3P-apush origin iss53checkout -b[C[C[C[C[C[C[5Pbranch --allv[Kcheckout iss53[2Pbranch[C[C[C[C[C[C[8Plast[1Ptagremote show originpull[Kstatusrestore readme.md[11Pstatusrestore --staged readme.md status[Krestore readme.md [4Padd[C[C[C[C[C[C[C[C[C[C[C[8Pstatusrestore readme.md[11Pstatuslog --since=1.days2.daysweeks[8Pgraph[4P--graphlog --name-only[4P--name-only[5Pstatus[2Ppullstatus[1Padd .[1Pdifflog --stat[1Pstat[1Pstat-p -2[Kpullshcommit -m "Unix session added"status[K[5Pcd ..[3Plsrm unix_shell_session:Zone.Identifier[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -F[Kcd Module\ 1/[3Pgit status[1Padd .status[6Pdone[1Psgecho << readme.md>>[C[C[C[C[C[C[C[C[C[Cgit add[C[C[C[C[C[C[C[C[C[Cpull[Kdiff --staged[4Pvim readme.mdgit status -s[5Pdiffstatus[2Pdiffcd TAMLEP/[6Pexitgit pushcommit -m "readme added"status[Kadd readme.mdls[Ktouch readme.md[5Pcd TAMLEP/git clone https://TAMLEP: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@github.com/807480Nikhil/TAMLEP[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd nikhil/[K..[Kgit pushcommit -m "unix session added"nfig --global credential-helper store[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbash git[Kgit bashconfig -lpush -u origin main[10Pconfig -l[5Pbashbash gitgit config --global credential-helper store[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pmmit -m "unix session added"push[K[3Pcd ..nikhil/git clone https://TAMLEP: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@github.com/807480Nikhil/TAMLEP[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd TAMLEP/[Ktouch readme.mdls[Kgit add readme.md[7Pstatuscommit -m "readme added"push[K[4Pexitcd TAMLEP/[2Pgit diffstatus[2Pdiffstatus -svim readme.mdgit diff --stagedpull[Kadd readme.mdecho >>[C[C[C[C[C[C[C[C[C[C<<[C[C[C[C[C[C[C[C[C[Cdsg[Konegit status[1Padd .statuscd Module\ 1/[3Pgit status[1Padd .status[6Pdone[1Psgecho << readme.md>>[C[C[C[C[C[C[C[C[C[Cgit add[C[C[C[C[C[C[C[C[C[Cpull[Kdiff --staged[4Pvim readme.mdgit status -s[5Pdiffstatus[2Pdiffcd TAMLEP/[6Pexitgit pushcommit -m "readme added"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit clone https://TAMLEP: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@github.com/807480Nikhil/TAMLEP
+[?2004lCloning into 'TAMLEP'...
+remote: Enumerating objects: 3, done.[K
+remote: Counting objects:  33% (1/3)[Kremote: Counting objects:  66% (2/3)[Kremote: Counting objects: 100% (3/3)[Kremote: Counting objects: 100% (3/3), done.[K
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)[K
+Receiving objects:  33% (1/3)Receiving objects:  66% (2/3)Receiving objects: 100% (3/3)Receiving objects: 100% (3/3), done.
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ git checkout dev
+[?2004lfatal: not a git repository (or any of the parent directories): .git
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ vd TAMLEP/
+[?2004lCommand 'vd' not found, but can be installed with:
+sudo apt install visidata
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~[00m$ cd TAMLEP/
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ cd TAMLEP/v[C[C[C[C[C[C[C[C[Cgit checkout dev
+[?2004lbranch 'dev' set up to track 'origin/dev'.
+Switched to a new branch 'dev'
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git status
+[?2004lOn branch dev
+Your branch is up to date with 'origin/dev'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mMODULE/[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git add .
+[?2004l[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git commit-m[K[K -m "assignment 1 to dev"
+[?2004l[dev ca44e65] assignment 1 to dev
+ 2 files changed, 10604 insertions(+)
+ create mode 100644 MODULE/1/Assignment1.1/my_git_session
+ create mode 100644 MODULE/1/Assignment1.1/unix_shell_session
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git push
+[?2004lEnumerating objects: 8, done.
+Counting objects:  12% (1/8)Counting objects:  25% (2/8)Counting objects:  37% (3/8)Counting objects:  50% (4/8)Counting objects:  62% (5/8)Counting objects:  75% (6/8)Counting objects:  87% (7/8)Counting objects: 100% (8/8)Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  14% (1/7)Writing objects:  28% (2/7)Writing objects:  42% (3/7)Writing objects:  57% (4/7)Writing objects:  71% (5/7)Writing objects:  85% (6/7)Writing objects: 100% (7/7)Writing objects: 100% (7/7), 271.38 KiB | 3.35 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: [1;31merror[m: GH013: Repository rule violations found for refs/heads/dev.[K
+remote: 
+remote: - GITHUB PUSH PROTECTION[K
+remote:   —————————————————————————————————————————[K
+remote:     Resolve the following violations before pushing again[K
+remote: 
+remote:     - Push cannot contain secrets[K
+remote: 
+remote:     [K
+remote:      (?) Learn how to resolve a blocked push[K
+remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push[K
+remote:     [K
+remote:     [K
+remote:       —— GitHub Personal Access Token ——————————————————————[K
+remote:        locations:[K
+remote:          - commit: ca44e652a269aeedafbbd3eb14172275adca2969[K
+remote:            path: MODULE/1/Assignment1.1/my_git_session:324[K
+remote:          - commit: ca44e652a269aeedafbbd3eb14172275adca2969[K
+remote:            path: MODULE/1/Assignment1.1/my_git_session:738[K
+remote:          - commit: ca44e652a269aeedafbbd3eb14172275adca2969[K
+remote:            path: MODULE/1/Assignment1.1/my_git_session:739[K
+remote:          - commit: ca44e652a269aeedafbbd3eb14172275adca2969[K
+remote:            path: MODULE/1/Assignment1.1/my_git_session:798[K
+remote:          - commit: ca44e652a269aeedafbbd3eb14172275adca2969[K
+remote:            path: MODULE/1/Assignment1.1/my_git_session:798[K
+remote:     [K
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.[K
+remote:        https://github.com/807480Nikhil/TAMLEP/security/secret-scanning/unblock-secret/2p9HYsHE9I37MzKmybYOdfSGjsB[K
+remote:     [K
+remote: 
+remote: 
+To https://github.com/807480Nikhil/TAMLEP
+ [31m! [remote rejected][m dev -> dev (push declined due to repository rule violations)
+[31merror: failed to push some refs to 'https://github.com/807480Nikhil/TAMLEP'
+[m[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git push
+[?2004lEnumerating objects: 8, done.
+Counting objects:  12% (1/8)Counting objects:  25% (2/8)Counting objects:  37% (3/8)Counting objects:  50% (4/8)Counting objects:  62% (5/8)Counting objects:  75% (6/8)Counting objects:  87% (7/8)Counting objects: 100% (8/8)Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  14% (1/7)Writing objects:  28% (2/7)Writing objects:  42% (3/7)Writing objects:  57% (4/7)Writing objects:  71% (5/7)Writing objects:  85% (6/7)Writing objects: 100% (7/7)Writing objects: 100% (7/7), 271.38 KiB | 3.82 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/807480Nikhil/TAMLEP
+   35a2997..ca44e65  dev -> dev
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git checkout main
+[?2004lSwitched to branch 'main'
+Your branch is up to date with 'origin/main'.
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git merge dev
+[?2004lUpdating 35a2997..ca44e65
+Fast-forward
+ MODULE/1/Assignment1.1/my_git_session     |  807 [32m++++++++++[m
+ MODULE/1/Assignment1.1/unix_shell_session | 9797 [32m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m
+ 2 files changed, 10604 insertions(+)
+ create mode 100644 MODULE/1/Assignment1.1/my_git_session
+ create mode 100644 MODULE/1/Assignment1.1/unix_shell_session
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ p[Kgit push
+[?2004lTotal 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/807480Nikhil/TAMLEP
+   35a2997..ca44e65  main -> main
+[?2004h]0;nikhil@DESKTOP-2LKE0I5: ~/TAMLEP[01;32mnikhil@DESKTOP-2LKE0I5[00m:[01;34m~/TAMLEP[00m$ exit
+[?2004lexit
+
+Script done on 2024-11-21 07:17:00+00:00 [COMMAND_EXIT_CODE="0"]
